@@ -4,14 +4,14 @@ public class MoodAnalyser {
 
     public static void main(String[] args) {
         MoodAnalyser moodAnalyser = new MoodAnalyser();
-        String happyMood = moodAnalyser.analyseMood("Happy mood");
+        String happyMood = moodAnalyser.analyseMood("I am in Happy Mood");
         System.out.println("Mood is "+happyMood);
-        String sadMood = moodAnalyser.analyseMood("Sad mood");
+        String sadMood = moodAnalyser.analyseMood("I am in Sad Mood");
         System.out.println("Mood is "+sadMood);
 
     }
 
-    String analyseMood(String message){
+    public String analyseMood(String message){
         if(message.toLowerCase().contains("sad")){
             return "SAD";
         }
